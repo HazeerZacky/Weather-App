@@ -4,6 +4,7 @@
 
 
 
+![Pic!](GitHubImg/2.png)
 ![Pic!](GitHubImg/1.png)
 <h5 align="center">Preview</h5>
 
