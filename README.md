@@ -1,6 +1,9 @@
 <h1 align="center">Hi 👋, I'm Mohammed Hazeer Zacky</h1>
 <h3 align="center">A passionate frontend developer and graphic designer from Sri Lanka</h3>
 
+<h1 align="center">Preview</h1>
+![Pic!](GitHubImg/1.png)
+
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=hazeerzacky&label=Profile%20views&color=0e75b6&style=flat" alt="hazeerzacky" /> </p>
 
 - 🌱 I’m currently learning **React**
