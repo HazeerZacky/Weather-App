@@ -161,7 +161,7 @@ const App = () => {
             placeholder="Search by city or country"
           />
           <button onClick={(e)=> handleSubmit(e)} className="bg-[#1ab8ed] hover:bg-[#15abdd] w-20 h-12 rounded-full flex justify-center items-center transition">
-            <IoMdSearch className="text-2x1 text-white" />
+            <IoMdSearch className="text-2xl text-white" />
           </button>
         </div>
       </form>
@@ -193,7 +193,7 @@ const App = () => {
                 {/* temp */}
                 <div className="text-[144px] leading-none font-light">{parseInt(data.main.temp)}</div>
                 {/* celsius icon */}
-                <div className="text-4x1">
+                <div className="text-4xl">
                   <TbTemperatureCelsius />
                 </div>
               </div>
@@ -252,6 +252,20 @@ const App = () => {
           </div>
         )}
       </div>
+
+      <form 
+      className={`
+        h-16 bg-black/30 w-full max-w-[450px] rounded-full backdrop-blur-[32px] mt-8`
+      }>
+        <div className="h-full relative flex items-center justify-between p-2">
+          <input
+            className="flex-1 bg-transparent outline-none
+            text-center text-white text-[15px] font-light pl-6 h-full" 
+            type="text" 
+            value="Mohammed Hazeer Zacky" disabled 
+          />
+        </div>
+      </form>
     </div>
   );
 };
