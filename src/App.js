@@ -35,7 +35,7 @@ const App = () => {
 
   // Fetch the data
   useEffect(() => {
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${APIkey}`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=${APIkey}`;
 
     axios.get(url).then((res) => {
       setData(res.data);
@@ -111,9 +111,67 @@ const App = () => {
             </div>
           </div>
           {/* Card Body */}
-          <div>Card Body</div>
+          <div className="my-20">
+            <div className="flex justify-center items-center">
+              {/* temp */}
+              <div className="text-[144px] leading-none font-light">{parseInt(data.main.temp)}</div>
+              {/* celsius icon */}
+              <div className="text-4x1">
+                <TbTemperatureCelsius />
+              </div>
+            </div>
+            {/* Weather discription */}
+            <div className="capitalize text-center">{data.weather[0].description}</div>
+          </div>
           {/* Card Bottom */}
-          <div>Card Bottom</div>
+          <div className="max-w-[378px] mx-auto flex flex-col gap-y-6">
+            <div className="flex justify-between">
+              <div className="flex items-center gap-x-2">
+                {/* icon */}
+                <div className="text-[20px]">
+                  <BsEye/>
+                </div>
+                <div>
+                  Visibility <span className="ml-2">{data.visibility / 1000}km</span>
+                </div>
+              </div>
+              <div className="flex items-center gap-x-2">
+                {/* icon */}
+                <div className="text-[20px]">
+                  <BsThermometer/>
+                </div>
+                <div className="flex">
+                  Feels like
+                  <div className="flex ml-2">
+                    {parseInt(data.main.feels_like)}
+                    <TbTemperatureCelsius/>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="flex justify-between">
+              <div className="flex items-center gap-x-2">
+                {/* icon */}
+                <div className="text-[20px]">
+                  <BsWater/>
+                </div>
+                <div>
+                  Humidity
+                  <span className="ml-2">{data.main.humidity} %</span>
+                </div>
+              </div>
+              <div className="flex items-center gap-x-2">
+                {/* icon */}
+                <div className="text-[20px]">
+                  <BsWind/>
+                </div>
+                <div>
+                  Wind
+                  <span className="ml-2">{data.wind.speed} m/s</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
