@@ -1,9 +1,11 @@
 <h1 align="center">Hi 👋, I'm Mohammed Hazeer Zacky</h1>
 <h3 align="center">A passionate frontend developer and graphic designer from Sri Lanka</h3>
+<h4 align="center">This is a React base Weather App using Openweathermap API</h4>
+
 
 
 ![Pic!](GitHubImg/1.png)
-<h1 align="center">Preview</h1>
+<h5 align="center">Preview</h5>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=hazeerzacky&label=Profile%20views&color=0e75b6&style=flat" alt="hazeerzacky" /> </p>
 
